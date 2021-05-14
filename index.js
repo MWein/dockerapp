@@ -10,6 +10,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(removePoweredBy)
 
-app.get('/', (req, res, next) => res.send('Hello!'))
+app.get('/', (req, res, next) => res.send('Goodbye!'))
+app.get('/hello', (req, res, next) => res.send('Hello!!'))
 
 module.exports = app
